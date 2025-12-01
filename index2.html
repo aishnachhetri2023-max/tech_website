@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery Hover & Click</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>My Gallery</h1>
+  </header>
+
+  <section class="gallery-grid">
+    <img src="image1.jpg" alt="Image 1" class="gallery-img">
+    <img src="image2.jpg" alt="Image 2" class="gallery-img">
+    <img src="image3.jpg" alt="Image 3" class="gallery-img">
+    <img src="image4.jpg" alt="Image 4" class="gallery-img">
+  </section>
+
+  <footer>
+    &copy; 2025 My Gallery
+  </footer>
+
+  <script>
+    // Toggle active effect on click
+    const images = document.querySelectorAll('.gallery-img');
+    images.forEach(img => {
+      img.addEventListener('click', () => {
+        img.classList.toggle('active-click');
+      });
+    });
+  </script>
+
+</body>
+</html>
