@@ -175,3 +175,16 @@ footer {
    padding: 2rem 1rem;
  }
 }
+
+.image-container img {
+  width: 300px;          /
+  transition: transform 0.3s, opacity 0.3s; 
+  border-radius: 10px;   
+}
+
+
+.image-container img:hover {
+  transform: scale(1.1); 
+  opacity: 0.8;          
+}
+
