@@ -116,12 +116,16 @@ img {
  margin-top: 1.5rem;
 }
 
-
 .gallery-img {
  height: 200px;
  object-fit: cover;
  border-radius: 12px;
  transition: transform 0.3s ease;
+}
+.gallery-img:active {
+  transform: scale(1.08);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+  filter: brightness(1.1);
 }
 
 
