@@ -4,7 +4,6 @@
  box-sizing: border-box;
 }
 
-
 body {
  font-family: "Poppins", Arial, sans-serif;
  background: #f8f8ff; /* softer light background */
@@ -12,13 +11,9 @@ body {
  line-height: 1.6;
 }
 
-
 h1, h2, h3 {
  font-weight: 600;
 }
-
-
-
 
 nav {
  background-color: #6a5acd; /* purple */
@@ -29,7 +24,6 @@ nav {
  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
-
 .nav-container {
  max-width: 1200px;
  margin: auto;
@@ -39,18 +33,15 @@ nav {
  align-items: center;
 }
 
-
 .nav-list {
  list-style: none;
  display: flex;
  gap: 2rem;
 }
 
-
 .nav-list li {
  position: relative;
 }
-
 
 .nav-list a {
  text-decoration: none;
@@ -61,14 +52,10 @@ nav {
  transition: 0.3s;
 }
 
-
 .nav-list a:hover,
 .nav-list a.active {
  border-bottom: 2px solid #fff;
 }
-
-
-
 
 header {
  background: linear-gradient(135deg, #6a5acd, #7c6cf0);
@@ -77,9 +64,6 @@ header {
  padding: 3rem 1.5rem;
  border-radius: 0 0 20px 20px;
 }
-
-
-
 
 section {
  max-width: 900px;
@@ -90,24 +74,17 @@ section {
  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-
 h2 {
  color: #6a5acd;
  font-size: 28px;
  margin-bottom: 1rem;
 }
 
-
-
-
 img {
  max-width: 100%;
  border-radius: 10px;
  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
-
-
-
 
 .gallery-grid {
  display: grid;
@@ -122,19 +99,16 @@ img {
  border-radius: 12px;
  transition: transform 0.3s ease;
 }
+
 .gallery-img:active {
   transform: scale(1.08);
   box-shadow: 0 12px 25px rgba(0,0,0,0.25);
   filter: brightness(1.1);
 }
 
-
 .gallery-img:hover {
  transform: scale(1.05);
 }
-
-
-
 
 .contact-box {
  background: #f0efff;
@@ -143,9 +117,6 @@ img {
  border-radius: 10px;
  font-size: 1.1rem;
 }
-
-
-
 
 footer {
  background: #6a5acd;
@@ -157,22 +128,23 @@ footer {
  font-size: 15px;
 }
 
-
-
-
 @media (max-width: 768px) {
  .nav-list {
    gap: 1rem;
  }
 
-
  section {
    padding: 1.5rem;
  }
-
 
  header {
    padding: 2rem 1rem;
  }
 }
+
+/* --- Added for smooth GIF and image hover --- */
+.gallery-img {
+  transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+}
+
 
