@@ -106,10 +106,10 @@ img {
   filter: brightness(1.1);
 }
 
-.gallery-img:hover {
- transform: scale(1.05);
+.book-card:hover {
+transform: translateY(-10px);
+box-shadow: 0 10px 25px var(--shadow);
 }
-
 .contact-box {
  background: #f0efff;
  padding: 1.5rem;
